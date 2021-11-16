@@ -40,3 +40,16 @@ document.querySelector("#mute").addEventListener("click", function() {
         document.querySelector('#mute').innerHTML = "Unmute";}
     else { video.muted = false;
         document.querySelector('#mute').innerHTML = "Mute";}});
+
+document.querySelector("#slider").addEventListener("click", function() {
+    console.log(this.value);
+    video.volume = this.value/100
+    document.getElementById("volume").innerHTML = this.value+"%";});
+
+document.querySelector("#vintage").addEventListener("click", function() {
+    console.log("Vintage");
+    video.classList.add("Video Style: oldSchool");s});
+
+document.querySelector("#orig").addEventListener("click", function() {
+    console.log("Video Style: Back to normal");
+    video.classList.remove("oldSchool");});
