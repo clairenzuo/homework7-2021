@@ -24,3 +24,4 @@ document.querySelector("#faster").addEventListener("click", function() {
     video.playbackRate * 1.05
 	video.play();
 });
+
