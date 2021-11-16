@@ -48,7 +48,7 @@ document.querySelector("#slider").addEventListener("click", function() {
 
 document.querySelector("#vintage").addEventListener("click", function() {
     console.log("Vintage");
-    video.classList.add("Video Style: oldSchool");s});
+    video.classList.add("Video Style: oldSchool");});
 
 document.querySelector("#orig").addEventListener("click", function() {
     console.log("Video Style: Back to normal");
