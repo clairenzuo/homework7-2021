@@ -47,8 +47,8 @@ document.querySelector("#slider").addEventListener("click", function() {
     document.getElementById("volume").innerHTML = this.value+"%";});
 
 document.querySelector("#vintage").addEventListener("click", function() {
-    console.log("Vintage");
-    video.classList.add("Video Style: oldSchool");});
+    console.log("Video Style: oldSchool");
+    video.classList.add("vintage");});
 
 document.querySelector("#orig").addEventListener("click", function() {
     console.log("Video Style: Back to normal");
