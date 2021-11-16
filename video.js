@@ -20,8 +20,23 @@ document.querySelector("#slower").addEventListener("click", function(){
 });
 
 document.querySelector("#faster").addEventListener("click", function() {
+	video.playbackRate = video.playbackRate * 1.05;
     console.log("Speed Up Video, New Speed: " + video.playbackRate);
-    video.playbackRate * 1.05
 	video.play();
 });
 
+document.querySelector("#skip").addEventListener("click", function() {
+    video.currentTime = video.currentTime + 15;
+    if(video.currentTime == video.duration){
+        video.currentTime = 0;
+        console.log("Going Back to Start of Video");
+        video.play();
+    }
+    console.log("Current Location: " + video.currentTime);});
+
+document.querySelector("#mute").addEventListener("click", function() {
+    if (video.muted === false) {    
+        video.muted = true;
+        document.querySelector('#mute').innerHTML = "Unmute";}
+    else { video.muted = false;
+        document.querySelector('#mute').innerHTML = "Mute";}});
